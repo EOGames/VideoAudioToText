@@ -1,0 +1,95 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.App
+{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  /* justify-content: center; */
+  align-items: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.form
+{
+  width: 50%; 
+  height: fit-content;
+  width: fit-content;
+  margin: 2rem;
+  display: flex;
+  /* flex-direction: column;
+  justify-content: center; */
+  align-items: center;
+  background-color: rgb(161, 146, 117);
+  color: antiquewhite;
+  text-shadow: 1px 1px 5px black;
+  text-align: center;
+  padding: 2rem;
+  /* flex-direction: column; */
+}
+
+.form > *
+{
+  padding:1rem .5rem;
+  margin: 1rem;
+  font-weight: 900;
+  font-size: 1.2rem;
+  box-shadow: 2px 2px 5px black;
+
+}
+
+input[type='file']
+{
+  background-color: #ccc;
+  color: black;
+  border: 5px solid grey;
+  border-radius: 10px;
+}
+
+input[type="file"]::file-selector-button {
+  padding: 1rem 1rem;
+  border-radius: .4rem;
+  border: none;
+  background-color: darkgray;
+  transition: 1s;
+  margin-right: 2rem;
+  box-shadow: 2px 2px 5px black;
+
+}
+
+input[type="file"]::file-selector-button:hover {
+  background-color: skyblue;
+}
+
+.transScriptHolder
+{
+  display: flex;
+  justify-content: center;  
+  justify-items: center;
+  width: 95%;
+  margin: 2rem;
+}
+.transcript
+{
+  background-color: grey;
+  width: fit-content;
+  height: 10%;
+  color: white;
+  padding: 2rem;
+  overflow-y: auto;
+}
+
+
